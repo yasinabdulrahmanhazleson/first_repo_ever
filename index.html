@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proTradeX Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+    
+</head>
+<body>
+
+    <div class="navbar-header">
+        <div class="container">
+
+            <div class="navbar-div">
+                <h4>ProTradeX</h4>
+                <p><a href="">Home</a></p>
+                <p><a href="">Features</a></p>
+                <p><a href="">Pricing</a></p>
+                <p><a href="">Login</a></p>
+                <p onclick=showsidebar()><a href="#"><i class="fa-solid fa-bars text-white"></i></a></p>
+
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="navbar-sidebar">
+        <div class="container-lg container-md position-relative">
+
+            <div class="sidebar-div">
+
+                <div class="icon-target ">
+                    <h4>ProTradeX</h4>
+                <h4 onclick=hidesidebar()><a href="#"><i class="fa-solid fa-xmark text-white fs-4" ></i></a></h4>
+                </div>
+                
+                <p><a href="">Home</a></p>
+                <p><a href="">Features</a></p>
+                <p><a href="">Pricing</a></p>
+                <p><a href="">Login</a></p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container-lg container-md">
+        <div class="trade-smarter">
+
+            <div class="trade-smarter-text">
+                <h1>Trade Smarter. Trade Faster.</h1>
+
+                <p>
+                  ProTradeX delivers a premium crypto trading platform
+                  with real-time analytics, lightning-fast execution,
+                  and professional tools.
+                </p> 
+
+                <button class="trade-smarter-button">Get Started</button>
+
+            </div>
+
+            <div class="trade-smarter-img">
+                <img src="./images/pexels-photo-844124 (1).jpeg" alt="">    
+            </div>
+        
+        </div>
+
+        <div class="why-choose">
+
+            <div class="why-choose-heading">
+                <h1>Why Choose ProTradeX?</h1>
+            </div>
+
+            <div class="why-choose-cards-parent">
+
+                <div class="why-choose-cards-child">
+                    <h3>Live Market Data</h3>
+                    <p>Stream real-time prices and trends from major crypto exchanges.</p>
+                </div>
+
+                <div class="why-choose-cards-child">
+                    <h3>Smart Trading Bots</h3>
+                    <p>Automate strategies with bots that trade 24/7 on your behalf.</p>
+                </div>
+
+                <div class="why-choose-cards-child">
+                    <h3>Advanced Charting</h3>
+                    <p>Leverage professional tools for in-depth technical analysis.</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="chart text-center">
+            <h4 class="text-white fw-bold p-2">Sample BTC Price Trend </h4>
+            <img src="./images/download.png" alt="">
+        </div>
+    
+    </div>
+
+    <div class="taking-control mt-5">
+            <h1 class="text-white fw-bold mb-4">Take Control of Your Crypto Portfolio</h1>
+            <p class="mb-4">Join thousands of traders who trust ProTradeX every day.</p>
+            <button class="fw-bolder">Create Free Account</button>
+    </div>
+
+
+    <div class="container-lg container-md footer mb-4">
+        <div class="">
+            <p>&copy; 2025 ProTradeX. All Rights reserved. Image by <span><a  class="text-white" href="" >Lukas</a></span> on pexels</p>
+        </div> 
+
+        <div class="footer-links">
+            <span><a href=""><i class="fa-brands fa-twitter"></i> Twitter</a></span>
+            <span><a href=""><i class="fa-brands fa-linkedin"></i> LinkedIn</a></span> 
+            <span><a href=""><i class="fa-brands fa-github"></i> GitHub</a></span>  
+        </div>
+    </div>
+
+<script>
+     function showsidebar(){
+         const sidebar=document.querySelector('.sidebar-div')
+         sidebar.style.display='flex'
+     }
+    
+     function hidesidebar(){
+        const sidebar=document.querySelector('.sidebar-div')
+        sidebar.style.display='none'
+     }
+
+</script>
+</body>
+</html>
